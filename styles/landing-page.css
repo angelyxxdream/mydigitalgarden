@@ -35,6 +35,8 @@ h1 {
     font-style: normal;
     text-align: center;
     color: #b33957;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    
 }
 /*footer {
     text-align: ;
