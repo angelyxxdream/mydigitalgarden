@@ -13,7 +13,8 @@ body {
   font-size: 16px;   
   line-height: 1.5;
   display: flex;
-  flex-direction: column;     
+  flex-direction: column;   
+  background-color: #F2E2BA;  
 }
 .container {
   display: flex;
@@ -27,7 +28,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0.5rem 1rem;
-  background-color: #94fbab;
+  background-color: #BAF2BB;
 }
 
 nav ul {
@@ -54,14 +55,15 @@ main {
   flex: 1;
   padding: 1rem;
   max-width: 600px;  
-  margin: 0 auto;    
+  margin: 0 auto; 
+/*  background-color: #F2E2BA;  */ 
 }
 footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
   margin-top: 2rem;
-  background-color: #BCB6FF;
+  background-color: #F2BAC9;
 }
 .footer-paragraph a {
   text-decoration: none;
