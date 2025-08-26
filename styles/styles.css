@@ -27,7 +27,7 @@ body {
   justify-content: space-between; 
   align-items: center;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background-color: #BAF2BB;
 }
 
@@ -39,7 +39,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color:#006400;
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
