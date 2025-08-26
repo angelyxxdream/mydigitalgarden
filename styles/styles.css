@@ -101,7 +101,16 @@ main {
   margin: 1rem auto;
   text-align: center;
   background-color: #BAD7F2;
+  opacity: 0;                  /* start invisible */
+  transform: translateY(20px); /* start slightly lower */
+  animation: fadeUp 0.6s ease-out forwards;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .post-card img {
   width: 50%;
