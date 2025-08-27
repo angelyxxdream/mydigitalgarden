@@ -6,11 +6,9 @@
     <link rel="icon" href="images/sunflower-icon.png" type="image/png">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>My Digital Garden</title>
 </head>
 <body>
@@ -18,49 +16,91 @@
         <header>
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="Tips.html">Tips</a></li>
-                    <li><a href="printcolor.html">Prints</a></li>
-                    <li><a href="seeds.html">Seeds</a></li>
-                    <li><a href="contact-me.html">FAQ</a></li>
+                    <li><a href="#" onclick="showSection('latest-posts')">Home</a></li>
+                    <li><a href="#" onclick="showSection('tips')">Tips</a></li>
+                    <li><a href="#" onclick="showSection('prints')">Prints</a></li>
+                    <li><a href="#" onclick="showSection('seeds')">Seeds</a></li>
+                    <li><a href="#" onclick="showSection('about')">About Me</a></li>
                 </ul>
             </nav>
-            <h1>My Digital Garden</h1>
-            <p class="header-paragraph">Welcome little one! This is a cozy place for you to learn everything about plants in a fun way. Here you'll find information about your favorite plants, how to take care of them and not only that! here you'll be able to find the coolest nature coloring pages. Let's get started! 🌼</p>
+
+            <!-- Header content -->
+            <div id="header-content">
+                <h1>My Digital Garden</h1>
+                <p class="header-paragraph">Welcome little one! This is a cozy place for you to learn everything about plants in a fun way. Here you'll find information about your favorite plants, how to take care of them and not only that! here you'll be able to find the coolest nature coloring pages. Let's get started! 🌼</p>
+            </div>
         </header>
 
-        
         <main>
-            <section class="latest-posts">
+            <!-- Latest Posts Section -->
+            <section id="latest-posts">
                 <h2>Latest Posts</h2>
-            <div class="cards-container">
-                <article class="post-card">
-                    <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                    <h3>How to take care of your succulent</h3>
-                    <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                    <a href="#">Read more</a>
-                </article>
-                <article class="post-card">
-                    <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                    <h3>How to take care of your succulent</h3>
-                    <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                    <a href="#">Read more</a>
-                </article>
-                <article class="post-card">
-                    <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                    <h3>How to take care of your succulent</h3>
-                    <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                    <a href="#">Read more</a>
-                </article>
-
-        
-            </div>
+                <div class="cards-container">
+                    <article class="post-card">
+                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
+                        <h3>How to take care of your succulent</h3>
+                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
+                        <a href="#">Read more</a>
+                    </article>
+                    <article class="post-card">
+                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
+                        <h3>How to take care of your succulent</h3>
+                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
+                        <a href="#">Read more</a>
+                    </article>
+                    <article class="post-card">
+                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
+                        <h3>How to take care of your succulent</h3>
+                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
+                        <a href="#">Read more</a>
+                    </article>
+                </div>
             </section>
 
+            <!-- Tips Section -->
+            <section id="tips">
+                <h2>Tips</h2>
+                <p>...</p>
+            </section>
+
+            <!-- Prints Section -->
+            <section id="prints">
+                <h2>Prints</h2>
+                <p>...</p>
+            </section>
+
+            <!-- Seeds Section -->
+            <section id="seeds">
+                <h2>Seeds</h2>
+                <p>...</p>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>...</p>
+            </section>
         </main>
+
         <footer>
             <p class="footer-paragraph">© 2025 <a href="https://x.com/angelyxxdream">angelyxxdream</a></p>
         </footer>
     </div>
-    <script src="scripts.js"></script>
+
+    <!-- JS Show/Hide Sections -->
+    <script>
+    function showSection(id) {
+        // Sections to toggle
+        const sectionIds = ['header-content', 'latest-posts', 'tips', 'prints', 'seeds', 'about'];
+
+        sectionIds.forEach(secId => {
+            const sec = document.getElementById(secId);
+            if (sec) sec.style.display = 'none';
+        });
+
+        const selected = document.getElementById(id);
+        if (selected) selected.style.display = 'block';
+    }
+    </script>
 </body>
 </html>
