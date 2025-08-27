@@ -162,3 +162,16 @@ footer {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+
+ /* --- Visibility control --- */
+      section,
+      #header-content {
+        display: none; /* hide everything by default */
+      }
+
+      /* First load shows header + latest posts */
+      #header-content,
+      #latest-posts {
+        display: block;
+      }

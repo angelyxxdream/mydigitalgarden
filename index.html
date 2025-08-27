@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>My Digital Garden</title>
+
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="#" onclick="showSection('latest-posts')">Home</a></li>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
                     <li><a href="#" onclick="showSection('tips')">Tips</a></li>
                     <li><a href="#" onclick="showSection('prints')">Prints</a></li>
-                    <li><a href="#" onclick="showSection('seeds')">Seeds</a></li>
                     <li><a href="#" onclick="showSection('about')">About Me</a></li>
                 </ul>
             </nav>
@@ -27,7 +27,11 @@
             <!-- Header content -->
             <div id="header-content">
                 <h1>My Digital Garden</h1>
-                <p class="header-paragraph">Welcome little one! This is a cozy place for you to learn everything about plants in a fun way. Here you'll find information about your favorite plants, how to take care of them and not only that! here you'll be able to find the coolest nature coloring pages. Let's get started! 🌼</p>
+                <p class="header-paragraph">
+                  Welcome little one! This is a cozy place for you to learn everything about plants in a fun way. 
+                  Here you'll find information about your favorite plants, how to take care of them and not only that! 
+                  Here you'll be able to find the coolest nature coloring pages. Let's get started! 🌼
+                </p>
             </div>
         </header>
 
@@ -69,12 +73,6 @@
                 <p>...</p>
             </section>
 
-            <!-- Seeds Section -->
-            <section id="seeds">
-                <h2>Seeds</h2>
-                <p>...</p>
-            </section>
-
             <!-- About Me Section -->
             <section id="about">
                 <h2>About Me</h2>
@@ -90,17 +88,26 @@
     <!-- JS Show/Hide Sections -->
     <script>
     function showSection(id) {
-        // Sections to toggle
-        const sectionIds = ['header-content', 'latest-posts', 'tips', 'prints', 'seeds', 'about'];
+        // All sections
+        const sectionIds = ['header-content', 'latest-posts', 'tips', 'prints', 'about'];
 
+        // Hide them all
         sectionIds.forEach(secId => {
             const sec = document.getElementById(secId);
             if (sec) sec.style.display = 'none';
         });
 
-        const selected = document.getElementById(id);
-        if (selected) selected.style.display = 'block';
+        if (id === 'home') {
+            // Show the "home view": header + latest posts
+            document.getElementById('header-content').style.display = 'block';
+            document.getElementById('latest-posts').style.display = 'block';
+        } else {
+            // Show just the selected section
+            const selected = document.getElementById(id);
+            if (selected) selected.style.display = 'block';
+        }
     }
     </script>
 </body>
 </html>
+
