@@ -19,7 +19,7 @@
                 <ul class="nav-bar">
                     <li><a href="#" onclick="showSection('home')">Home</a></li>
                     <li><a href="#" onclick="showSection('tips')">Tips</a></li>
-                    <li><a href="#" onclick="showSection('prints')">Prints</a></li>
+                    <li><a href="#" onclick="showSection('gallery')">Gallery</a></li>
                     <li><a href="#" onclick="showSection('about')">About Me</a></li>
                 </ul>
             </nav>
@@ -68,15 +68,27 @@
             </section>
 
             <!-- Prints Section -->
-            <section id="prints">
-                <h2>Prints</h2>
+            <section id="gallery">
+                <h2>Gallery</h2>
                 <p>...</p>
             </section>
 
             <!-- About Me Section -->
             <section id="about">
                 <h2>About Me</h2>
-                <p>...</p>
+                    <div class="about-me">
+                        <img class="aboutme-icon" src="images/avatar.jpg" alt="my cute avatar">
+                            <h3>My name is Angely!</h3>
+                                <p>I'm a 26 years old Software Engineer and a Frontend Design enthusiast. </p>
+                                <p>My purpose here is providing little ones a site to introduce them in the amazing experience of Gardening. </p>
+                                <p>Gardening, as taking care of a pet, is a great way to teach them to appreciate nature and have a caring feeling for them.</p>
+                                <p>Feel free to contact me for recommendations or advices!!!</p>
+                            <h3>Contact:</h3>
+                                <a href="https://x.com/angelyxxdream"><img class="media-icon" src="images/x.svg" alt="x icon"></a>
+                                <a href="https://github.com/angelyxxdream"><img class ="media-icon" src="images/github.svg" alt="github icon"></a>
+                                <a href="mailto:angelyxxdream@gmail.com"><img class ="media-icon" src="images/gmail.svg" alt="gmail icon"></a>
+
+                    </div>
             </section>
         </main>
 
@@ -89,7 +101,7 @@
     <script>
     function showSection(id) {
         // All sections
-        const sectionIds = ['header-content', 'latest-posts', 'tips', 'prints', 'about'];
+        const sectionIds = ['header-content', 'latest-posts', 'tips', 'gallery', 'about'];
 
         // Hide them all
         sectionIds.forEach(secId => {
