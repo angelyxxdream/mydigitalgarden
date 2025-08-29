@@ -1,0 +1,112 @@
+[
+  {
+    "type": "image",
+    "src": "images_from_pdf/page10_0.png",
+    "title": "Page10_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page11_0.png",
+    "title": "Page11_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page12_0.png",
+    "title": "Page12_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page13_0.png",
+    "title": "Page13_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page14_0.png",
+    "title": "Page14_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page15_0.png",
+    "title": "Page15_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page16_0.png",
+    "title": "Page16_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page17_0.png",
+    "title": "Page17_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page18_0.jpeg",
+    "title": "Page18_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page19_0.png",
+    "title": "Page19_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page1_0.png",
+    "title": "Page1_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page20_0.png",
+    "title": "Page20_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page21_0.png",
+    "title": "Page21_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page2_0.png",
+    "title": "Page2_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page3_0.jpeg",
+    "title": "Page3_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page4_0.jpeg",
+    "title": "Page4_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page5_0.png",
+    "title": "Page5_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page6_0.png",
+    "title": "Page6_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page7_0.jpeg",
+    "title": "Page7_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page8_0.png",
+    "title": "Page8_0"
+  },
+  {
+    "type": "image",
+    "src": "images_from_pdf/page9_0.png",
+    "title": "Page9_0"
+  },
+  {
+    "type": "pdf",
+    "src": "pdfs/gallery.pdf",
+    "title": "Download full PDF"
+  }
+]

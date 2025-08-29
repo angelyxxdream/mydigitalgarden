@@ -67,10 +67,11 @@
                 <p>...</p>
             </section>
 
-            <!-- Prints Section -->
+            <!-- Gallery Section -->
             <section id="gallery">
                 <h2>Gallery</h2>
-                <p>...</p>
+                    <div class ="text-container"> <p> Hi kiddo!!! Hope you fine here something cool to print and paint. Have fun!!!</p></div>
+                    <div class ="gallery-container"></div>
             </section>
 
             <!-- About Me Section -->
@@ -120,6 +121,50 @@
         }
     }
     </script>
+    <section id="gallery">
+        <h2>Gallery</h2>
+            <div class="intro-text">
+                <p>Hi!! here you can find the best sheets to print and paint. Have fun.</p>
+            </div>
+            
+            <div class="gallery-container">
+                <!-- Images from JSON will be inserted here -->
+            </div>
+    </section>
+    <!-- JS for gallery images -->
+<script>
+async function loadGallery() {
+    const response = await fetch('gallery.json');
+    const items = await response.json();
+
+   
+    const container = document.querySelector('.gallery-container');
+
+    items.forEach(item => {
+        let element;
+
+        if (item.type === 'image') {
+            element = document.createElement('img');
+            element.src = item.src;
+            element.alt = item.title;
+            element.style.maxWidth = "200px";
+            element.style.margin = "0.5rem";
+        } else if (item.type === 'pdf') {
+            element = document.createElement('a');
+            element.href = item.src;
+            element.textContent = item.title;
+            element.target = "_blank";
+            element.style.display = "block";
+            element.style.marginTop = "1rem";
+        }
+
+        container.appendChild(element);
+    });
+}
+
+loadGallery();
+</script>
+
 </body>
 </html>
 

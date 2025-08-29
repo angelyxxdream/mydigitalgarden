@@ -85,7 +85,7 @@ main {
 
 /*main styling starts here*/
 
-.latest-posts h2{
+#latest-posts h2{
   text-align: center;
   font-weight: bold;
   font-family: "Red Hat Display", sans-serif;
@@ -176,7 +176,7 @@ footer {
       #latest-posts {
         display: block;
       }
-
+/*about me starts here*/
 #about h2{
   display: block;
   text-align: center;
@@ -184,9 +184,13 @@ footer {
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  /*margin-bottom: 2rem;*/
   color:#5c4033;
 }
-
+#about{
+  /*margin-top: 5%;*/
+  
+}
 .about-me {
   display: block;
   box-sizing: border-box;
@@ -229,4 +233,53 @@ footer {
   margin-top: 10px;
   margin-right: 10px;
   max-width: 25px;
+}
+/*end of about me section*/
+
+
+/*gallery styling*/
+#gallery h2 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:#5c4033;
+}
+.text-container p {
+  text-align: center;
+  line-height: 1.8;
+  color:#36454f;
+  padding: 0.5rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #BAD7F2;
+ 
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.gallery-container a {
+  text-decoration: none;
+  color: #2a2f33;
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
