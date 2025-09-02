@@ -36,35 +36,21 @@
         </header>
 
         <main>
+            
             <!-- Latest Posts Section -->
             <section id="latest-posts">
                 <h2>Latest Posts</h2>
-                <div class="cards-container">
-                    <article class="post-card">
-                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                        <h3>How to take care of your succulent</h3>
-                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                        <a href="#">Read more</a>
-                    </article>
-                    <article class="post-card">
-                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                        <h3>How to take care of your succulent</h3>
-                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                        <a href="#">Read more</a>
-                    </article>
-                    <article class="post-card">
-                        <img src="images/succulent.png" alt="post image is a succulent in 8bits">
-                        <h3>How to take care of your succulent</h3>
-                        <p>Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!</p>
-                        <a href="#">Read more</a>
-                    </article>
+                <div class="cards-container" id="latest-posts-container">
+            <!-- JS will inject latest 3 posts here -->
                 </div>
             </section>
 
             <!-- Tips Section -->
             <section id="tips">
                 <h2>Tips</h2>
-                <p>...</p>
+                <div class="cards-container" id="tips-posts-container">
+            <!-- JS will inject all posts here -->
+                </div>
             </section>
 
             <!-- Gallery Section -->
@@ -164,7 +150,69 @@ async function loadGallery() {
 
 loadGallery();
 </script>
+    <!-- JS for latest posts and tips section -->
+<script>
+// Load posts from JSON and render them
+async function loadPosts() {
+    const response = await fetch('posts.json');
+    const posts = await response.json();
 
+    const latestContainer = document.getElementById("latest-posts-container");
+    const tipsContainer = document.getElementById("tips-posts-container");
+
+    // Function to render posts as cards
+    function renderPosts(postList, container) {
+        container.innerHTML = "";
+        postList.forEach(post => {
+            const card = document.createElement("article");
+            card.classList.add("post-card");
+
+            card.innerHTML = `
+                <img src="${post.image}" alt="post image">
+                <h3>${post.title}</h3>
+                <p>${post.summary}</p>
+                <a href="#" class="read-more">Read more</a>
+            `;
+
+            // Read more button
+            card.querySelector(".read-more").addEventListener("click", (e) => {
+                e.preventDefault();
+                showFullPost(post, container, postList);
+            });
+
+            container.appendChild(card);
+        });
+    }
+
+    // Show full post with paragraphs
+    function showFullPost(post, container, postList) {
+        container.innerHTML = `
+            <article class="post-card post-full">
+                <img src="${post.image}" alt="post image">
+                <h3>${post.title}</h3>
+                ${post.content.split('\n\n').map(section => `<p>${section}</p>`).join('')}
+                <a href="#" class="back">Back</a>
+            </article>
+        `;
+
+        // Back button restores the card view
+        container.querySelector(".back").addEventListener("click", (e) => {
+            e.preventDefault();
+            renderPosts(postList, container);
+        });
+    }
+
+    // Render latest 3 posts
+    renderPosts(posts.slice(0, 3), latestContainer);
+
+    // Render all posts in Tips
+    renderPosts(posts, tipsContainer);
+}
+
+// Initialize
+loadPosts();
+
+</script>
 </body>
 </html>
 

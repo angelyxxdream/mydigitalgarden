@@ -1,15 +1,26 @@
 [
   {
-    "title": "How to take care of your succulent",
+    "title": "How to Take Care of Your Succulent",
     "image": "images/succulent.png",
-    "summary": "Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!",
-    "url": "#"
+    "summary": "Succulents are fun and easy plants to grow! Let’s learn how to keep them happy.",
+    "content": "🌞 Sunlight: Succulents love light, but not strong direct sun. Place them near a window so they get gentle light every day.\n\n💧 Watering: Only water when the soil looks dry or cracked. Always water the soil, not the leaves, and keep a nice rhythm — not too often!\n\n🌱 Soil: Ask your parents to use cactus soil mixed with sand or perlite. This makes the roots feel comfy.\n\n❄️ Cold Weather: In winter, bring your succulents inside at night so they don’t get too cold.\n\n🪴 Repotting: Be very gentle when moving your succulent to a new pot — the roots are delicate.\n\n🧹 Cleaning: Dust can sit on their leaves, so use a soft brush to keep them clean.\n\n🐞 Pests: If you see tiny bugs like aphids or mealybugs, ask your parents for help to treat your plant safely."
   },
   {
-    "title": "How to take care of your succulent",
-    "image": "images/succulent.png",
-    "summary": "Succulents are a good option to introduce yourself to gardening. Wanna know more? Keep reading!",
-    "url": "#"
+    "title": "How to Grow Sunflowers",
+    "image": "images/sunflower.png",
+    "summary": "Sunflowers are tall, bright, and happy plants! Let’s learn how to make them grow strong.",
+    "content": "🌞 Sunlight: Sunflowers love the sun! Plant them somewhere sunny so they can stretch tall.\n\n💧 Watering: Water them regularly, especially when the soil looks dry, but don’t flood them.\n\n🌱 Soil: They like loose, well-drained soil. You can mix a little compost to help them grow.\n\n🪴 Support: Tall sunflowers might need a stick to help them stand up straight.\n\n🌻 Fun tip: Watch them follow the sun during the day—it’s like they are dancing!"
+  },
+  {
+    "title": "How to Care for Roses",
+    "image": "images/rose.png",
+    "summary": "Roses are beautiful flowers that need a little love. Here’s how to take care of them!",
+    "content": "🌞 Sunlight: Roses like lots of sunlight—at least 6 hours a day.\n\n💧 Watering: Water at the base of the plant to keep the roots happy. Don’t get water on the leaves too much.\n\n🌱 Soil: Roses love rich, well-drained soil. Adding compost helps them grow strong.\n\n✂️ Pruning: Cut old or dead branches carefully to help new flowers grow.\n\n🐞 Pests: Keep an eye out for tiny bugs. Ask an adult to help if you need to treat them."
+  },
+  {
+    "title": "How to Grow Beans",
+    "image": "images/beans.png",
+    "summary": "Beans are fun to grow because you can watch them sprout and climb! Let’s see how.",
+    "content": "🌞 Sunlight: Beans like lots of sunlight to grow big and strong.\n\n💧 Watering: Keep the soil moist, especially while seeds are sprouting, but don’t overwater.\n\n🌱 Soil: Plant beans in soft, rich soil that drains well.\n\n🪴 Support: Some beans grow tall and need a little stick or net to climb.\n\n🌿 Fun tip: Watch how fast the seedlings grow each day—it’s like magic!"
   }
- 
 ]

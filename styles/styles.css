@@ -85,7 +85,7 @@ main {
 
 /*main styling starts here*/
 
-#latest-posts h2{
+#latest-posts h2,#tips h2 {
   text-align: center;
   font-weight: bold;
   font-family: "Red Hat Display", sans-serif;
@@ -113,10 +113,16 @@ main {
     transform: translateY(0);
   }
 }
+
 .post-card img {
-  width: 50%;
-  height: auto;
+   width: 150px;           /* tamaño fijo más pequeño */
+  height: 150px;          /* altura fija para uniformidad */
+  object-fit: cover;      /* mantiene proporción y recorta si es necesario */
+  /*display: block;         */
+  margin: 0 auto 1rem auto; /* centra horizontalmente y separa del texto */
 }
+ 
+
 .post-card h3 {
   margin: 8px 0 6px 0;
   font-size: 18px;
@@ -137,7 +143,7 @@ main {
 }
 .post-card a {
   text-decoration: none;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   color:#2a2f33;
   font-family: "Red Hat Display", sans-serif;
@@ -187,10 +193,7 @@ footer {
   /*margin-bottom: 2rem;*/
   color:#5c4033;
 }
-#about{
-  /*margin-top: 5%;*/
-  
-}
+
 .about-me {
   display: block;
   box-sizing: border-box;
