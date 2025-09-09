@@ -229,7 +229,7 @@ footer {
   display: block;
   margin: 0 auto;
   border-radius: 100%;
-  border: 10px solid #F2BAC9;
+  border: 10px solid white;
 }
 .media-icon {
   display: inline-block;
